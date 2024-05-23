@@ -2,6 +2,8 @@ ACERTIJOS ITSMEÑOS
 
 
 *OBJETIVO*
+
+
 El objetivo principal de este proyecto es crear una plataforma que combine elementos de realidad aumentada y reconocimiento de voz para ofrecer una experiencia única de aprendizaje y entretenimiento. Los usuarios pueden resolver acertijos tradicionales de la región del Istmo de Oaxaca, acumulando puntos por cada respuesta correcta, hasta alcanzar un puntaje máximo que les otorga un mensaje de felicitaciones.
 
 
