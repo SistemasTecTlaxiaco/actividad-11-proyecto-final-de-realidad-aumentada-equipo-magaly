@@ -28,6 +28,14 @@ Crear una interfaz amigable que muestre el modelo 3D, con un boton interactivo p
 
 
 
+*JUSTIFICACION*
+
+
+Los acertijos tradicionales del Istmo de Oaxaca representan un importante patrimonio cultural y folclórico que merece ser preservado y difundido. Al integrarlos en un proyecto de realidad aumentada, se puede ofrecer una experiencia educativa y entretenida que fomente el conocimiento y aprecio por esta rica tradición
+
+
+
+
 
 
 
