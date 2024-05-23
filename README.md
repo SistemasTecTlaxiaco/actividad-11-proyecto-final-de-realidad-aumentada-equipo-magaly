@@ -1,7 +1,8 @@
 # Octacat-AR :smiley_cat::iphone::octopus:
 Debido a la gran demanda tecnológica actual y al creciente interés de muchas empresas por la inclusión de diversas tecnologías para presentar sus productos, la Realidad Aumentada (RA) se posiciona como una gran herramienta que permite aumentar un espacio físico según las características deseada. Los medios basados en imágenes presentan limitaciones a nivel de interacción e inmersión ya que el usuario solo puede ver el proyecto establecido sin modificar parámetros que le permitan sentirse a gusto con el espacio arquitectónico de su interés.
 # OBJETIVO DEL PROYECTO :checkered_flag:
-Desarrollar un prototipo de aplicación interactiva basada en realidad aumentada para visualizar un apartamento y realizar modificaciones visuales de colores, texturas y distribuciones predeterminadas.
+El objetivo principal de este proyecto es crear una plataforma que combine elementos de realidad aumentada y reconocimiento de voz para ofrecer una experiencia única
+de aprendizaje y entretenimiento. Los usuarios pueden resolver acertijos tradicionales de la región del Istmo de Oaxaca, acumulando puntos por cada respuesta correcta, hasta alcanzar un puntaje máximo que les otorga un mensaje de felicitaciones.
 # OBJETIVO ESPECIFICO :mag:
 -Implementar la interacción con realidad aumentada: Desarrollar la funcionalidad que permita cargar un modelo 3D y mostrarlo en un entorno de realidad aumentada utilizando A-Frame y MindAR.
 
@@ -13,10 +14,11 @@ Desarrollar un prototipo de aplicación interactiva basada en realidad aumentada
 # JUSTIFICACIÓN :pencil:
 La realidad aumentada permite complementar la experiencia del usuario a través de la inmersión en un espacio virtual 3D y la interacción a través de parámetros personalizables del modelo ya que su acceso no está limitado a un espacio físico o equipo específico. Estas características permiten la toma de decisiones con base en la navegación del espacio virtual que complementan los medios tradicionales como los folletos, planos y videos utilizados frecuentemente en la actualidad. 
 # REQUISITOS :heavy_check_mark:
-- Internet
-- Navegador
-- Marcador de imagen (Octocad)
-- Dispositivo con camara
+•Computadora
+• Internet
+• Glitch
+• Marcador
+• Teléfono
 # COMO UTILIZAR LA APLICACIÓN
 https://drive.google.com/file/d/15QcskNeMnk_WN-0F3fzBN2AK9SVbH1k4/view?usp=drivesdk
 
@@ -27,24 +29,20 @@ https://drive.google.com/file/d/15QcskNeMnk_WN-0F3fzBN2AK9SVbH1k4/view?usp=drive
     <td style="width: 33%;">Rol</td>
   </tr>
   <tr>
-    <td style="width: 33%;">Jaciel García Santiago</td>
+    <td style="width: 33%;">Judith Reyna Cruz Santiago</td>
     <td style="width: 33%;">Lider del proyecto</td>
   </tr>
   <tr>
-    <td style="width: 33%;">Emmanuel Riaño Hernández</td>
+    <td style="width: 33%;">Maria Jose Lopez Leyva</td>
     <td style="width: 33%;">Programador</td>
   </tr>
   <tr>
-    <td style="width: 33%;">Antonio Cruz Chavez</td>
+    <td style="width: 33%;">Magaly Nicolas Sanchez</td>
     <td style="width: 33%;">Tester</td>
   </tr>
   <tr>
-    <td style="width: 33%;">Marcos Jonathan García Núñez</td>
+    <td style="width: 33%;">Abigail Coronel Santiago</td>
     <td style="width: 33%;">Diseñador</td>
-  </tr>
-  <tr>
-    <td style="width: 33%;">David Juan Feria Ortiz</td>
-    <td style="width: 33%;">Analista</td>
   </tr>
 </table>
 
