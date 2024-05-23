@@ -26,7 +26,7 @@ La implementación de tecnologías emergentes, como la realidad aumentada (AR) y
 # COMO UTILIZAR LA APLICACIÓN
 https://drive.google.com/file/d/15QcskNeMnk_WN-0F3fzBN2AK9SVbH1k4/view?usp=drivesdk
 
-# EQUIPO DE DESARROLLO :computer::boy:
+# EQUIPO DE DESARROLLO :computer::girl:
 <table style="width: 100%; text-align: center;">
   <tr>
     <td style="width: 33%;">Nombre</td>
