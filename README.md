@@ -12,7 +12,7 @@ de aprendizaje y entretenimiento. Los usuarios pueden resolver acertijos tradici
 
 -Desarrollar la lógica de juego: Implementar la lógica que gestione la presentación de acertijos, verificación de respuestas, actualización de puntajes y visualización de mensajes de retroalimentación
 # JUSTIFICACIÓN :pencil:
-La realidad aumentada permite complementar la experiencia del usuario a través de la inmersión en un espacio virtual 3D y la interacción a través de parámetros personalizables del modelo ya que su acceso no está limitado a un espacio físico o equipo específico. Estas características permiten la toma de decisiones con base en la navegación del espacio virtual que complementan los medios tradicionales como los folletos, planos y videos utilizados frecuentemente en la actualidad. 
+La implementación de tecnologías emergentes, como la realidad aumentada (AR) y el reconocimiento de voz, en aplicaciones educativas y de entretenimiento representa una oportunidad significativa para innovar en la forma en que se transmiten y se interactúa con el conocimiento cultural y tradicional. El proyecto propuesto, que se enfoca en acertijos tradicionales de la región del Istmo de Oaxaca, combina estas tecnologías para ofrecer una experiencia enriquecedora y envolvente.
 # REQUISITOS :heavy_check_mark:
 •Computadora
 
