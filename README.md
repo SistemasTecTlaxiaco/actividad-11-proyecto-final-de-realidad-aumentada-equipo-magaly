@@ -3,10 +3,13 @@ Debido a la gran demanda tecnológica actual y al creciente interés de muchas e
 # OBJETIVO DEL PROYECTO :checkered_flag:
 Desarrollar un prototipo de aplicación interactiva basada en realidad aumentada para visualizar un apartamento y realizar modificaciones visuales de colores, texturas y distribuciones predeterminadas.
 # OBJETIVO ESPECIFICO :mag:
-- Caracterizar el prototipo a desarrollar.
-- Analizar, depurar y levantar tridimensionalmente la información recopilada.
-- Realizar el diseño del desarrollo de software con base a los prototipos.
-- Desarrollar el entorno de realidad aumentada que permita la visualización del prototipo desde distintos ángulos.
+-Implementar la interacción con realidad aumentada: Desarrollar la funcionalidad que permita cargar un modelo 3D y mostrarlo en un entorno de realidad aumentada utilizando A-Frame y MindAR.
+
+-Integrar reconocimiento de voz: Incorporar la capacidad de reconocer comandos de voz específicos para iniciar y responder a los acertijos, utilizando la API de reconocimiento de voz del navegador.
+
+-Crear una base de datos de acertijos: Establecer una colección de acertijos tradicionales de la región del Istmo de Oaxaca junto con sus respuestas correctas para su uso en el proyecto.
+
+-Desarrollar la lógica de juego: Implementar la lógica que gestione la presentación de acertijos, verificación de respuestas, actualización de puntajes y visualización de mensajes de retroalimentación
 # JUSTIFICACIÓN :pencil:
 La realidad aumentada permite complementar la experiencia del usuario a través de la inmersión en un espacio virtual 3D y la interacción a través de parámetros personalizables del modelo ya que su acceso no está limitado a un espacio físico o equipo específico. Estas características permiten la toma de decisiones con base en la navegación del espacio virtual que complementan los medios tradicionales como los folletos, planos y videos utilizados frecuentemente en la actualidad. 
 # REQUISITOS :heavy_check_mark:
