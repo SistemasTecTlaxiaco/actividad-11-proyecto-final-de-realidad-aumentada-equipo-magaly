@@ -1,4 +1,4 @@
-# ARcetijos ITSMEÑOS :iphone:Itsmo:
+# ARcetijos ITSMEÑOS :iphone
 Debido a la gran demanda tecnológica actual y al creciente interés de muchas empresas por la inclusión de diversas tecnologías para presentar sus productos, la Realidad Aumentada (RA) se posiciona como una gran herramienta que permite aumentar un espacio físico según las características deseada. Los medios basados en imágenes presentan limitaciones a nivel de interacción e inmersión ya que el usuario solo puede ver el proyecto establecido sin modificar parámetros que le permitan sentirse a gusto con el espacio arquitectónico de su interés.
 # OBJETIVO DEL PROYECTO :checkered_flag:
 El objetivo principal de este proyecto es crear una plataforma que combine elementos de realidad aumentada y reconocimiento de voz para ofrecer una experiencia única
