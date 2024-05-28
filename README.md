@@ -26,6 +26,11 @@ La implementación de tecnologías emergentes, como la realidad aumentada (AR) y
 # COMO UTILIZAR LA APLICACIÓN
 https://www.youtube.com/watch?si=QkXZVVkR5Y-vMEXQ&v=kV3_dyNo2HA&feature=youtu.be
 
+# ACERTIJOS
+
+![WhatsApp Image 2024-05-20 at 1 10 39 PM](https://github.com/SistemasTecTlaxiaco/actividad-11-proyecto-final-de-realidad-aumentada-equipo-magaly/assets/134730811/85d8aa51-04a2-41a8-a33a-e57fca77fc90)
+
+
 # EQUIPO DE DESARROLLO :computer::girl:
 <table style="width: 100%; text-align: center;">
   <tr>
