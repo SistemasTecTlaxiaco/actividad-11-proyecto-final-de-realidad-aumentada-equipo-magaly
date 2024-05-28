@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    a-scene {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <a-scene
+    mindar-image="imageTargetSrc: https://cdn.glitch.global/95301303-40c8-469c-9e9d-9afc611747ef/targets.mind?v=1715046447257; showStats: false;"
+    embedded
+    color-space="sRGB"
+    renderer="colorManagement: true, physicallyCorrectLights"
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false"
+  >
+    <a-assets>
+      <a-asset-item
+        id="avatarModelAsset"
+        src="https://cdn.glitch.global/95301303-40c8-469c-9e9d-9afc611747ef/proyectomona.glb?v=1715046494794"
+      ></a-asset-item>
+    </a-assets>
+
+    <a-camera
+      position="0 0 0"
+      look-controls="enabled: false"
+      cursor="fuse: false; rayOrigin: mouse;"
+      raycaster="far: 10000; objects: .clickable"
+    ></a-camera>
+
+    <a-entity id="mytarget" mindar-image-target="targetIndex: 0">
+      <a-gltf-model
+        id="avatarModel"
+        rotation="0 0 0"
+        position="0 -0.25 0"
+        scale="0.080 0.080 0.080"
+        src="#avatarModelAsset"
+      ></a-gltf-model>
+      <a-image
+        id="voice-button"
+        class="clickable"
+        src="https://cdn.glitch.global/95301303-40c8-469c-9e9d-9afc611747ef/play.png?v=1716230258291"
+        position="0.42 -0.5 0"
+        height="0.15"
+        width="0.15"
+        onclick="startVoiceRecognition()"
+        title="Di 'Hola' para empezar"
+      ></a-image>
+      <a-text
+        id="text"
+        class="clickable"
+        value=""
+        color="black"
+        align="center"
+        width="2"
+        position="0 -1 0"
+        geometry="primitive:plane; height: 0.1; width: 2;"
+        material="opacity: 0.5"
+      ></a-text>
+    </a-entity>
+  </a-scene>
+
+  <script>
+    let score = 0;
+    let currentRiddle = "";
+    let usedRiddles = new Set();
+    const startPhrase = "hola"; // Frase para iniciar los acertijos
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = "es-MX";
+
+    const riddles = {
+      "¿Qué cosa es, que reluce mucho y cae del cielo para darnos luz?": "la estrella",
+      "Cabeza grande, cola larga, cuerpo pequeño y se arrastra": "el raton",
+      "Llena agujeros, cubre montes, se guarda en bolsas grandes y pequeñas. ¿Qué es?": "la sal",
+      "Vuela sin alas, llora sin ojos, su risa es contagiosa y su andar sin patas es veloz": "el viento",
+      "Del árbol me cortaron, del sol me secaron, en trocitos me muelen y en caliente me toman ¿Qué soy?": "el cafe",
+      "Entre el río y el mar vivo, con escamas me cubro y en la parrilla me sirven?": "el pescado",
+      "En lo alto del cielo estoy, en el agua de mar también, pero si caigo en la tierra dura, pronto desaparezco ¿Quién soy?": "el sol",
+      "Roja por dentro, amarilla por fuera, si quieres que te adivine, espera a que madure": "la sandia",
+      "De un lado a otro voy, blanco y negro me verán, si me sacan de mi caja, no dejaré de sonar": "el piano",
+      "Dos hermanas juntas viven, una morena y otra rubia, no son gemelas, pero siguen la misma ruta": "la carretera"
+    };
+
+    recognition.onresult = function (event) {
+      const result = event.results[0][0].transcript.toLowerCase();
+      if (result.includes(startPhrase)) {
+        askNewRiddle(); // Empezar el primer acertijo
+      } else {
+        checkAnswer(result);
+      }
+    };
+
+    recognition.onspeechend = function () {
+      recognition.stop();
+    };
+
+    recognition.onerror = function (event) {
+      console.error("Error occurred in recognition: " + event.error);
+    };
+
+    const startVoiceRecognition = () => {
+      recognition.start();
+    };
+
+    const checkAnswer = (answer) => {
+      const textElement = document.querySelector("#text");
+      if (riddles[currentRiddle] === answer) {
+        updateScore(10); // Aumenta el puntaje en 10 por cada respuesta correcta
+        textElement.setAttribute("value", "¡Respuesta correcta! Puntaje: " + score);
+        askNewRiddle(); // Preguntar un nuevo acertijo después de una respuesta correcta
+      } else {
+        textElement.setAttribute("value", "Lo siento, respuesta incorrecta. Puntaje: " + score);
+        // Permitir que el usuario intente de nuevo con el mismo acertijo
+        recognition.start();
+      }
+    };
+
+    const updateScore = (points) => {
+      score += points;
+      const textElement = document.querySelector("#text");
+      if (score >= 100) {
+        textElement.setAttribute("value", "¡Felicidades! Has acumulado 100 puntos.");
+      } else {
+        textElement.setAttribute("value", "Puntaje: " + score);
+      }
+    };
+
+    const askNewRiddle = () => {
+      if (usedRiddles.size === Object.keys(riddles).length) {
+        usedRiddles.clear(); // Reiniciar si ya se han usado todos los acertijos
+      }
+      let riddleKeys = Object.keys(riddles).filter(key => !usedRiddles.has(key));
+      currentRiddle = riddleKeys[Math.floor(Math.random() * riddleKeys.length)];
+      usedRiddles.add(currentRiddle);
+      speak(currentRiddle);
+    };
+
+    const speak = (text) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "es-MX";
+      window.speechSynthesis.speak(utterance);
+    };
+  </script>
+</body>
+</html>
+
+
+
+
+
