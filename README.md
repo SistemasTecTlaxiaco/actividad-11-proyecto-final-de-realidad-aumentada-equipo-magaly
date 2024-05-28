@@ -24,7 +24,7 @@ La implementación de tecnologías emergentes, como la realidad aumentada (AR) y
 
 • Teléfono
 # COMO UTILIZAR LA APLICACIÓN
-Video
+https://www.youtube.com/watch?si=QkXZVVkR5Y-vMEXQ&v=kV3_dyNo2HA&feature=youtu.be
 
 # EQUIPO DE DESARROLLO :computer::girl:
 <table style="width: 100%; text-align: center;">
