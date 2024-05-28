@@ -65,8 +65,8 @@ https://www.youtube.com/watch?si=QkXZVVkR5Y-vMEXQ&v=kV3_dyNo2HA&feature=youtu.be
 # LINK DE PROYECTO
 ## https://lime-rhetorical-parsnip.glitch.me
 
-
-
+# MARCADOR
+![WhatsApp Image 2024-05-09 at 10 32 26 AM](https://github.com/SistemasTecTlaxiaco/actividad-11-proyecto-final-de-realidad-aumentada-equipo-magaly/assets/134730811/21657b3f-98b1-4804-a081-f05ef21dd219)
 
 
 
