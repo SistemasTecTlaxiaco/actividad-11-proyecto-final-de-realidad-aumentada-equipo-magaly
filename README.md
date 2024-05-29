@@ -26,11 +26,6 @@ La implementación de tecnologías emergentes, como la realidad aumentada (AR) y
 # COMO UTILIZAR LA APLICACIÓN
 https://www.youtube.com/watch?si=QkXZVVkR5Y-vMEXQ&v=kV3_dyNo2HA&feature=youtu.be
 
-# ACERTIJOS
-
-![WhatsApp Image 2024-05-20 at 1 10 39 PM](https://github.com/SistemasTecTlaxiaco/actividad-11-proyecto-final-de-realidad-aumentada-equipo-magaly/assets/134730811/85d8aa51-04a2-41a8-a33a-e57fca77fc90)
-
-
 # EQUIPO DE DESARROLLO :computer::girl:
 <table style="width: 100%; text-align: center;">
   <tr>
@@ -71,7 +66,10 @@ https://www.youtube.com/watch?si=QkXZVVkR5Y-vMEXQ&v=kV3_dyNo2HA&feature=youtu.be
 ## https://lime-rhetorical-parsnip.glitch.me
 
 # MARCADOR
-![WhatsApp Image 2024-05-09 at 10 32 26 AM](https://github.com/SistemasTecTlaxiaco/actividad-11-proyecto-final-de-realidad-aumentada-equipo-magaly/assets/134730811/21657b3f-98b1-4804-a081-f05ef21dd219)
+![WhatsApp Image 2024-05-20 at 12 47 39 PM](https://github.com/SistemasTecTlaxiaco/actividad-11-proyecto-final-de-realidad-aumentada-equipo-magaly/assets/134730811/05592636-c6e9-4107-817c-c231ce586d13)
+
+# ACERTIJOS
+![WhatsApp Image 2024-05-20 at 1 10 39 PM](https://github.com/SistemasTecTlaxiaco/actividad-11-proyecto-final-de-realidad-aumentada-equipo-magaly/assets/134730811/b99eb814-af1c-4f87-962f-d9d81038df88)
 
 
 
